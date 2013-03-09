@@ -1,9 +1,9 @@
 Redmine::Plugin.register :redmine_checkbox_wiki do
   
   Redmine::WikiFormatting::Macros.macro :checkbox, :desc => 'An open or closed checkbox' do |obj, args|
-    if args.nil? || args.empty?
+    if args.nil? || args.empty? || args[0].strip.empty?
       image_tag("unchecked.png", :plugin => :redmine_checkbox_wiki)
-    elsif ((args[0].casecmp('true') != 0) && (args[0] != '1'))
+    elsif ((args[0].strip.casecmp('true') != 0) && (args[0].strip != '1'))
       image_tag("false.png")
     else
       image_tag("true.png")

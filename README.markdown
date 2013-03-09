@@ -2,7 +2,7 @@
 
 ## Overview/Usage
 
-Provides basic checkbox wiki macro format
+Simple plugin that provides basic checkbox wiki macro format
 
 Adds the following macros
 
