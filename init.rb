@@ -1,6 +1,11 @@
 Redmine::Plugin.register :redmine_checkbox_wiki do
   
-  Redmine::WikiFormatting::Macros.macro :checkbox, :desc => 'An open or closed checkbox' do |obj, args|
+  Redmine::WikiFormatting::Macros.macro :checkbox, :desc => 'Simple plugin that provides basic checkbox wiki macro format
+Adds the following macros
+
+    `{{checkbox()}}`: an open checkbox
+`{{checkbox(1)}}`: a true checkbox
+`{{checbox(0)}}`: a false/error checkbox' do |obj, args|
     if args.nil? || args.empty? || args[0].strip.empty?
       image_tag("unchecked.png", :plugin => :redmine_checkbox_wiki)
     elsif ((args[0].strip.casecmp('true') != 0) && (args[0].strip != '1'))
