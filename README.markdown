@@ -12,6 +12,10 @@ Adds the following macros
 
 `{{checbox(0)}}`: a false/error checkbox
 
+`{{checkbox(!)}}`: an exclamation point
+
+`{{checkbox(?)}}`: a question mark
+
 ## Installation
 
 1. Clone the repository to /plugins/redmine_checkbox_wiki

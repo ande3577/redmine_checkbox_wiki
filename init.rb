@@ -5,9 +5,15 @@ Adds the following macros
 
     `{{checkbox()}}`: an open checkbox
 `{{checkbox(1)}}`: a true checkbox
-`{{checbox(0)}}`: a false/error checkbox' do |obj, args|
+`{{checkbox(0)}}`: a false/error checkbox
+`{{checkbox(!)}}`: an exclamation point
+`{{checkbox(?)}}`: a question mark' do |obj, args|
     if args.nil? || args.empty? || args[0].strip.empty?
       image_tag("unchecked.png", :plugin => :redmine_checkbox_wiki)
+    elsif (args[0].strip == '!')
+      image_tag("exclamation.png")
+    elsif (args[0].strip == '?')
+      image_tag("help.png")
     elsif ((args[0].strip.casecmp('true') != 0) && (args[0].strip != '1'))
       image_tag("false.png")
     else
