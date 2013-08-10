@@ -1,5 +1,7 @@
 # Redmine checkbox wiki
 
+Tested with Redmine 2.3 and 2.4.
+
 ## Overview/Usage
 
 Simple plugin that provides basic checkbox wiki macro format
@@ -15,6 +17,8 @@ Adds the following macros
 `{{checkbox(!)}}`: an exclamation point
 
 `{{checkbox(?)}}`: a question mark
+
+![Screenshot of resulting wiki syntax](img/checkbox_screenshots.png)
 
 ## Installation
 
