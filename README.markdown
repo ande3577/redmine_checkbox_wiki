@@ -18,6 +18,8 @@ Adds the following macros
 
 `{{checkbox(?)}}`: a question mark
 
+![Screenshot of resulting wiki syntax](img/checkbox_screenshots.png)
+
 ## Installation
 
 1. Clone the repository to /plugins/redmine_checkbox_wiki
