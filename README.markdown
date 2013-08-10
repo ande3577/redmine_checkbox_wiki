@@ -1,5 +1,7 @@
 # Redmine checkbox wiki
 
+Tested with Redmine 2.3 and 2.4.
+
 ## Overview/Usage
 
 Simple plugin that provides basic checkbox wiki macro format
